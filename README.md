@@ -84,15 +84,15 @@ Example Usage
 -------------
 
 ```python
->>> from pymeta.grammar import OMeta
->>> exampleGrammar = """
+from pymeta.grammar import OMeta
+exampleGrammar = """
 ones ::= '1' '1' => 1
 twos ::= '2' '2' => 2
 stuff ::= (<ones> | <twos>)+
 """
->>> Example = OMeta.makeGrammar(exampleGrammar, {})
->>> g = Example("11221111")
->>> result, error = g.apply("stuff")
->>> result
-[1, 2, 1, 1]
+Example = OMeta.makeGrammar(exampleGrammar, {})
+g = Example("11221111")
+result, error = g.apply("stuff")
+print(result)
+# Outputs [1, 2, 1, 1]
 ```
