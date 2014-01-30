@@ -4,7 +4,7 @@
 from distutils.core import setup
 setup(
     name="PyMeta",
-    version="0.5.0",
+    version="0.5.0-mjumbewu1",
     url="http://launchpad.net/pymeta",
     description="Pattern-matching language based on OMeta",
     long_description=open('README.md').read(),
